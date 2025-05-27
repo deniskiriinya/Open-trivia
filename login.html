@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz Arena</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <header>
+     <nav>
+            <ul>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html" class="active">Login / Signup</a></li>
+                <li id="logout-link" style="display: none;"><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+  </header>
+  <div class="container">
+    <h2>Login / Sign Up</h2>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+
+    <div class="btn-group">
+      <button onclick="signUp()">Sign Up</button>
+      <button onclick="logIn()">Log In</button>
+    </div>
+    <p id="message"></p>
+  </div>
+   <footer>
+        <p>&copy; 2023 Quiz Arena. All rights reserved.</p>
+    </footer>
+
+</body>
+
+  <script src="login.js"></script>
+</body>
+</html>

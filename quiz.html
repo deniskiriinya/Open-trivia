@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz Arena</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="quiz.html" class="active">Quiz</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login / Sign Up</a></li>
+                <li id="logout-link" style="display: none;"><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- quiz.html -->
+<button id="logout-btn">Logout</button>
+
+    
+
+<div class="settings">
+  <label for="category">Category:</label>
+  <select id="category">
+    <option value="">Loading categories...</option>
+  </select>
+
+  <label for="difficulty">Difficulty:</label>
+  <select id="difficulty">
+    <option value="">Any</option>
+    <option value="easy">Easy</option>
+    <option value="medium">Medium</option>
+    <option value="hard">Hard</option>
+  </select>
+
+  <button id="start-btn">Start Quiz</button>
+</div>
+  <div class="quiz-container">
+    <h1>Trivia Quiz</h1>
+    <div id="question-container">
+      <p id="question">Loading question...</p>
+      <div id="answers"></div>
+      <audio id="correct-sound" src="correct.mp3" preload="auto"></audio>
+      <audio id="wrong-sound" src="wrong.mp3" preload="auto"></audio>
+    </div>
+    <div id="timer">Time left: 15s</div>
+    <button id="next-btn">Next</button>
+    <p id="score">Score: 0</p>
+    <div id="high-score">High Score: 0</div>
+  </div>
+  <script src="script.js"></script>
+</body>
+<footer>
+    <p>&copy; 2023 Quiz Arena. All rights reserved.</p>
+    </footer>
+</html>
