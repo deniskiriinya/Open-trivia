@@ -31,6 +31,18 @@ ul {
     align-items: center;
     text-align: center;
 }
+.hero-section p {
+    font-size: 1.5rem;       /* Slightly larger than default for readability */      /* White text (assuming dark background) */
+    margin-top: 5.0rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    text-align: center;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); /* Adds subtle depth */
+}
 
 
 
@@ -54,14 +66,15 @@ nav a.active {
     background-position: center;
 }
 
-.hero h1 {
-    font-size: 48px;
+.hero-section h1 {
+    margin-top: 7.0rem;
+    font-size: 38px;
 }
 
 p {
-    color: #e9ac13;
+    color: #fda206;
     font-size: 24px;
-    margin: 20px 0;
+    margin: 40px 0;
 }
 
 a {
@@ -74,10 +87,10 @@ a {
 
 .hero-section a {
     font-size: large;
-
     background-color: #e9ac13;
     transition: background-color 0.3s ease;
 }
+
 
 footer {
     background: #1a1a1a;
